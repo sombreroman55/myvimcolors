@@ -1,7 +1,7 @@
 " Vapor vim color scheme
 " Author:   Andrew Roberts
 " URL:      https://github.com/sombreroman55/myvimcolors/
-" License:  GNU GPL3 <https://www.gnu.org/licenses/gpl.html>
+" License:  MIT <https://www.gnu.org/licenses/gpl.html>
 "
 " Summary:
 "
@@ -103,10 +103,13 @@ let g:is_dark=(&background == 'dark')
 " Palette: {{{
 
 " Setup the palette dictionary
-let s:gb = {}
+let s:vpcolors = {}
 
 " Fill dictionary with absolute colors
-let s:gb.dark0_hard = ['#1d2021', 234]
+let s:vpcolors.
+
+
+
 " }}}
 " Setup Emphasis: {{{
 let s:bold = 'bold,'
@@ -133,6 +136,11 @@ let s:inverse = 'inverse'
 if g:vapor_inverse == 0
     let s:inverse = ''
 endif
+" }}}
+" Setup Colors: {{{
+" }}}
+
+" Overload Settings: {{{
 " }}}
 " Highlighting Function: {{{
 function! s:HL(group, fg, ...)
@@ -181,6 +189,17 @@ function! s:HL(group, fg, ...)
     execute join(histring, ' ')
 endfunction
 " }}}
+" Vapor Hi Groups: {{{
+" }}}
+
+" Vanilla colorsceme ---------------------------------------------------------
+
+
+" TODO: Fill in these specifics after fine-tuning vanilla settings
+" Plugin specific ------------------------------------------------------------
+
+
+" Filetype specific ----------------------------------------------------------
 
 
 " Functions ------------------------------------------------------------------
